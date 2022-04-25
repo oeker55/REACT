@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border: 5px solid darkgreen;
 }
 
 .App-logo {
@@ -36,3 +37,12 @@
     transform: rotate(360deg);
   }
 }
+.BlogItem1{
+  border: 2px solid red;
+}
+.Blog{
+  border: 4px solid  rebeccapurple;
+
+  color: red;
+}
+
