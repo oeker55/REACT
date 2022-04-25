@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-export default class NewComp1 extends Component {
+export default class BlogTitle extends Component {
   render() {
     return (
       <div>NewComp1</div>
+      
     )
   }
 }
