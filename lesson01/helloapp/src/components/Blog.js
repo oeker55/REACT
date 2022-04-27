@@ -1,25 +1,17 @@
-import React, { Component } from "react";
-import BlogItem1 from "./BlogItem1";
+import BlogItem from './BlogItem'
+
+import React, { Component } from 'react'
 
 export default class Blog extends Component {
-  render() {
-    let isimler = ["Ali", "Ahmet", "Mehmet"];
+  render(){
+    let name ="özgür"
+    let age = 28;
+    let person ={id:"1", lang:"english"}
+
     return (
-      <div className="Blog">
-        <h1>Blog Js Title</h1>
-        {/*
-            <BlogItem1 description="Merhaba from Blog JS" />
-        <BlogItem1 name="Özgür " />
-        
-        <BlogItem1 surname=" Eker" />
-        */}
-        {isimler.map((item) => {
-          //  <h1>{item}</h1>
-          //console.log(item)
-          //console.log(i)
-         return console.log(item);
-        })}
+      <div>Blog
+          <BlogItem name={name} age={age} user={person}  />
       </div>
-    );
+    )
   }
 }
