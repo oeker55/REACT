@@ -1,0 +1,55 @@
+.container{
+    padding: 20px;
+    margin: 0 auto;
+    border: 5px solid black;
+    width: 400px;
+}
+.filter-input {
+  margin-left: 5px;
+  margin-bottom: 5px;
+  height: 40px;
+  line-height: 25px;
+  width: 350px;
+  text-indent: 10px;
+}
+.list-field {
+    border: 1px solid;
+  
+  width: 340px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.list-field-form {
+   
+   
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
+  }
+ul,
+li {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+.list-field li{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: #F8F8F8;
+    padding: 5px;
+    color: black;
+    border-bottom: 1px solid #F1F1F1;
+    /* clear: both; */
+ 
+}
+
+/* }.list-field li span{
+    display: block;
+}.list-field li span.name{
+    float: left;
+}.list-field li span.phone{
+    float: right;
+} */

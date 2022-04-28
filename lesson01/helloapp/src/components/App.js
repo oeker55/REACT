@@ -1,6 +1,7 @@
 //import logo from "./logo.svg";
 import "./App.css";
-import Blog from "./components/Blog";
+import Blog from "./Blog";
+
 
 
 
@@ -11,6 +12,7 @@ function App() {
      
       <h1>AppJS TEST</h1>
       <Blog/>
+   
  
      
     </div>

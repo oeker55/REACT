@@ -1,37 +1,23 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
 export default class StateSample extends Component {
-  constructor(props) {
-    super(props);
-    console.log("constructor çalıştı");
-
-    // this.state = {
-    //     name: "emma",
-    //     age:"24"
-
-    // }
-  
-}
-  state = {
-    name: "tommy",
-    age: 25,
-    count: 0
-  }
-
+state={name: "hagi"} 
 render() {
-      
-     const counter=()=>{
-        this.setState({count:Math.floor(Math.random()*4)})
+
+    let {name} = this.state
+   const changeState=()=>{
+     if(name==="hagi")
+      this.setState({name:"popescu"})
+      else{
+        this.setState({name:"hagi"})
       }
+      
+    }
     return (
-      <div>
-        StateSample <hr />
-        {/* {this.state.name} <br />
-        {this.state.age}<br/>*/}
-        
-        <button onClick={counter}>+</button> <br/>
-      count=  {this.state.count}
+      <div>StateSample <br/>
+     <button onClick={changeState}>+</button><br/>
+      {name}
       </div>
-    );
+    )
   }
 }
