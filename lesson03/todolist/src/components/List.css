@@ -1,0 +1,22 @@
+.todo-list{
+    width: 400px;
+    margin: 10px auto;
+    list-style-type: none;
+    border: 1px solid black;
+    text-align: left;
+
+
+}
+.todo{
+    
+
+}
+.input{
+    width: 400px;
+    padding: 0px;
+   
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+}
