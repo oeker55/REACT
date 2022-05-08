@@ -7,11 +7,12 @@ import PersonDetail from "./components/PersonDetail";
 function App() {
   const userId=["2","5","8","22","63"]
   return (
+    <>
     <div className="App">
     
       <Link to="/">Home Page</Link>
       <Link to="/Link1" style={{ color: "red", display: "block" }}>
-        AddUser
+        Add User
       </Link>
       <Link style={{ color: "red", display: "block" }} to="/Link2">List</Link>
       {userId.map((id,index)=>(
@@ -33,6 +34,7 @@ function App() {
       </Routes>
      
     </div>
+    </>
   );
 }
 
