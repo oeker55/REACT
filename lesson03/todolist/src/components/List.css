@@ -7,6 +7,22 @@
 
 
 }
+.delete-Btn{
+color:red;
+cursor :pointer;
+background-color: azure;
+float:right
+
+
+}
+.edit-Btn{
+    color:coral;
+    cursor :pointer;
+    background-color: azure;
+    float:left
+    
+    
+    }
 .todo{
     
 
