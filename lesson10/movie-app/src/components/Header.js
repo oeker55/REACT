@@ -27,6 +27,7 @@ export default class Header extends Component {
       <Menu.Item header>MovieApp</Menu.Item>
       <Menu.Item as={Link} to="/" >Home Page</Menu.Item>
       <Menu.Item as={Link} to="movies" >Movies</Menu.Item>
+      <Menu.Item as={Link} to="movies/new" >Add Movie</Menu.Item>
 
       <Menu.Menu position="right">
         

@@ -9,9 +9,11 @@ import thunk from "redux-thunk"
 import logger from "redux-logger"
 import { Provider } from 'react-redux';
 import {BrowserRouter} from "react-router-dom"
+import promise from "redux-promise-middleware"
 
 
-////sdmantic-ui cdn integration---------
+
+////semantic-ui cdn integration---------
 const semanticUiCSS = document.createElement("link")
 semanticUiCSS.rel="stylesheet"
 semanticUiCSS.href ="https://cdn.jsdelivr.net/npm/semantic-ui@2/dist/semantic.min.css"
@@ -19,10 +21,11 @@ document.head.appendChild(semanticUiCSS)
 const semanticUiJS = document.createElement("scripts")
 semanticUiJS.src = "https://cdn.jsdelivr.net/npm/semantic-ui-react/dist/umd/semantic-ui-react.min.js"
 document.head.appendChild(semanticUiJS)
+
 ////-----semantic-ui cdn integration
 
 const allEnhancers = compose(
-  applyMiddleware(thunk, logger),
+  applyMiddleware(thunk,promise, logger),
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 
@@ -30,6 +33,7 @@ const myStore = createStore(rootReducer,allEnhancers )
 
 
 ReactDOM.render(
+  
   <React.StrictMode>
     <BrowserRouter>
     <Provider store={myStore}>
