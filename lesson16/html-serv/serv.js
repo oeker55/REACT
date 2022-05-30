@@ -2,6 +2,7 @@ const fs = require("fs")
 const http = require("http")
 
 const myServer = http.createServer((req, res)=>{
+    console.log("This is request",req.url)
 
 fs.readFile("ozgur.html",(err, data)=>{
 if (err) {
