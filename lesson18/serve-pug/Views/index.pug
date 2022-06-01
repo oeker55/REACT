@@ -1,0 +1,23 @@
+html 
+    head 
+        title PUG File
+    body 
+        //- this is comment line ---> "-" koyulmazsa browser de incelendiğnde görünür
+        include menu 
+        -var jobTitle = "Chief Web Designer"
+        -var jobType = "Technician"
+        h1 Merhaba PUG
+        | hello from new line 
+        br
+        span(style="color:white;background:gray") özgür
+        br
+        | isim #{name}
+        br
+        |  telefon no #{phone}
+        br
+        |job title is #{jobTitle.toUpperCase()}
+        br
+        |job type is #{jobType}
+        hr
+        include footer.pug 
+
